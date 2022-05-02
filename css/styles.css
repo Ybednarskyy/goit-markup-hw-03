@@ -1,0 +1,179 @@
+/* Присвоюємо змінним кольори тексту */
+:root {
+  --primary-white-color: #ffffff;
+  --primary-text-color: #212121;
+  --description-text-color: #757575;
+  --accent-color: #2196f3;
+  --header-logo-color: #000000;
+  --button-color: #f5f4fa;
+  --background-dark-color: #2f303a;
+  --address-item-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Стилі які наслідуються */
+body {
+  color: var(--description-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+/* Логотип */
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.header-logo {
+  color: var(--header-logo-color);
+}
+
+.footer-logo {
+  color: var(--primary-white-color);
+}
+
+/* Забирає символи списку */
+.list {
+  list-style: none;
+}
+
+.site-nav,
+.auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link {
+  color: var(--primary-text-color);
+}
+
+.auth-nav-link {
+  color: inherit;
+}
+
+/* Виділяє кольором посилання поточної сторінки */
+.current {
+  color: var(--accent-color);
+}
+
+/* Забирає підкреслювання посилань */
+.link {
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+/* Колір заголовку героя білий, тому тимчасово застосував фон тексту */
+.hero-title {
+  color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member-title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.member-description {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.hero,
+.footer {
+  background-color: var(--background-dark-color);
+}
+
+.address-link {
+  color: var(--address-item-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address-link-white {
+  color: var(--primary-white-color);
+}
+
+.product-title {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.filter-button {
+  background-color: var(--button-color);
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+}
