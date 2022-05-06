@@ -393,11 +393,9 @@ ul {
 
 .products-img {
   display: block;
-  border: solid 1px transparent;
 }
 
 .item-border {
-  display: block;
   padding: 20px 24px;
   border-right: solid 1px var(--item-border-color);
   border-bottom: solid 1px var(--item-border-color);
