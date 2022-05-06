@@ -8,6 +8,8 @@
   --button-color: #f5f4fa;
   --background-dark-color: #2f303a;
   --address-item-color: rgba(255, 255, 255, 0.6);
+  --header-border-color: #ececec;
+  --item-border-color: #eeeeee;
 }
 
 /* Стилі які наслідуються */
@@ -19,6 +21,9 @@ body {
   letter-spacing: 0.03em;
 }
 
+/* Обнуляє відступи заголовків і списків */
+h1,
+h2,
 h3,
 p,
 ul {
@@ -27,6 +32,16 @@ ul {
 
 ul {
   padding-left: 0;
+}
+
+/* Контейнер */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 2px solid tomato; */
 }
 
 /* Логотип */
@@ -40,6 +55,19 @@ ul {
   text-decoration: none;
 }
 
+/* Хедер */
+.header .logo {
+  display: block;
+  margin-right: 95px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   color: var(--header-logo-color);
 }
@@ -48,9 +76,48 @@ ul {
   color: var(--primary-white-color);
 }
 
+/* Нижня рамка хедера */
+.header-border {
+  border-bottom: solid 1px var(--header-border-color);
+}
+
 /* Забирає символи списку */
 .list {
   list-style: none;
+}
+
+/* Головне меню */
+.main-nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav-item {
+  display: block;
+  margin-right: 50px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 0;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav-phone {
+  margin-right: 50px;
+}
+
+.site-nav-link,
+.auth-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav,
@@ -84,7 +151,13 @@ ul {
   color: var(--accent-color);
 }
 
-/* Колір заголовку героя білий, тому тимчасово застосував фон тексту */
+/* Герой */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+/* Заголовок героя */
 .hero-title {
   color: var(--primary-white-color);
   font-family: 'Roboto', sans-serif;
@@ -95,6 +168,9 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 30px;
+
+  display: block;
   margin-bottom: 30px;
 }
 
@@ -113,6 +189,14 @@ ul {
   padding: 10px 32px;
   border: none;
   border-radius: 4px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .title {
@@ -133,26 +217,42 @@ ul {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 50px;
+
+  display: block;
+  margin-bottom: 50px;
 }
 
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/* Секція переваги */
+
+.benefits-list {
+  display: flex;
+  justify-content: space-between;
 }
 
-.about {
-  padding-bottom: 94px;
+.benefits-item {
+  display: block;
+  width: 270px;
 }
 
-.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/* Секція Про нас */
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-img {
+  display: block;
 }
 
 .team-list {
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-item {
+  display: block;
+  width: 270px;
   padding-bottom: 30px;
 }
 
@@ -176,9 +276,26 @@ ul {
   text-align: center;
 }
 
+/* Колір фону героя і футера */
 .hero,
 .footer {
   background-color: var(--background-dark-color);
+}
+
+/* Футер */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.address-item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -193,12 +310,17 @@ ul {
   color: var(--primary-white-color);
 }
 
+/* Сторінка Портфоліо */
+
 .product-title {
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  display: block;
+  margin-bottom: 4px;
 }
 
 .product-description {
@@ -207,6 +329,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
+/* Стилі кнопок фільтра */
 .filter-button {
   background-color: var(--button-color);
   color: var(--primary-text-color);
@@ -214,12 +337,27 @@ ul {
   font-size: 16px;
   line-height: 1.63;
   cursor: pointer;
+
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+}
+
+/* Розташування кнопок фільтра */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 /* Приховує заголовки */
@@ -234,17 +372,34 @@ ul {
   overflow: hidden;
 }
 
-/* Position */
-
-.container {
-  width: 1220px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin: 0 auto;
-  outline: 2px solid tomato;
+/* Сітка елементів портфоліо */
+.products-list {
+  display: flex;
+  /* Робимо Flex-контейнер багаторядковим */
+  flex-wrap: wrap;
+  /* Компенсовуємо верхні і праві відступи першого ряду */
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-.footter-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.products-item {
+  display: block;
+  width: 370px;
+  /* Задаємо всім елементам верхній і правий відступи */
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.products-img {
+  display: block;
+  border: solid 1px transparent;
+}
+
+.item-border {
+  display: block;
+  padding: 20px 24px;
+  border-right: solid 1px var(--item-border-color);
+  border-bottom: solid 1px var(--item-border-color);
+  border-left: solid 1px var(--item-border-color);
 }

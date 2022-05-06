@@ -19,20 +19,27 @@
   </head>
   <body>
     <!--header-->
-    <header>
-      <div class="container header-box">
+    <header class="header header-border">
+      <div class="container">
         <nav class="main-nav">
           <!--logo-->
           <a href="index.html" class="logo" lang="en">Web<span class="header-logo">Studio</span></a>
+          <!-- site-nav -->
           <ul class="site-nav list">
-            <li><a href="./index.html" class="site-nav-link link current">Студия</a></li>
-            <li><a href="portfolio.html" class="site-nav-link link">Портфолио</a></li>
-            <li><a href="" class="site-nav-link link">Контакты</a></li>
+            <li class="site-nav-item">
+              <a href="./index.html" class="site-nav-link link current">Студия</a>
+            </li>
+            <li class="site-nav-item">
+              <a href="portfolio.html" class="site-nav-link link">Портфолио</a>
+            </li>
+            <li class="site-nav-item"><a href="" class="site-nav-link link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-nav list">
-          <li><a href="tel:+380961111111" class="auth-nav-link link">+38 096 111 11 11</a></li>
-          <li>
+          <li class="auth-nav-phone">
+            <a href="tel:+380961111111" class="auth-nav-link link">+38 096 111 11 11</a>
+          </li>
+          <li class="auth-nav-mail">
             <a href="mailto:info@devstudio.com" class="auth-nav-link link">info@devstudio.com</a>
           </li>
         </ul>
@@ -44,54 +51,61 @@
         <button type="button" class="hero-button">Заказать услугу</button>
       </section>
       <!-- features -->
-      <section class="section benefits">
+      <section class="benefits section">
         <div class="container">
           <!-- TODO Заголовок приховати -->
           <h2 class="visually-hidden">Про нас</h2>
-          <ul class="list">
-            <li>
+          <ul class="benefits-list list">
+            <li class="benefits-item">
               <h3 class="title">Внимание к деталям</h3>
-              <p>
+              <p class="benefits-description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="title">Пунктуальность</h3>
-              <p>
+              <p class="benefits-description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="title">Планирование</h3>
-              <p>
+              <p class="benefits-description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="title">Современные технологии</h3>
-              <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+              <p class="benefits-description">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
             </li>
           </ul>
         </div>
       </section>
       <!-- work -->
-      <section class="section about">
+      <section class="about section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list">
+          <ul class="about-list list">
             <li>
               <a href="">
-                <img src="./images/box/box-1.jpg" alt="Разработка сайтов" width="370" />
+                <img
+                  class="about-img"
+                  src="./images/box/box-1.jpg"
+                  alt="Разработка сайтов"
+                  width="370"
+                />
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./images/box/box-2.jpg" alt="Поддержка" width="370" />
+                <img class="about-img" src="./images/box/box-2.jpg" alt="Поддержка" width="370" />
               </a>
             </li>
             <li>
               <a href="">
-                <img src="./images/box/box-3.jpg" alt="Дизайн" width="370" />
+                <img class="about-img" src="./images/box/box-3.jpg" alt="Дизайн" width="370" />
               </a>
             </li>
           </ul>
@@ -142,7 +156,7 @@
     </main>
     <!--Footer-->
     <footer class="footer">
-      <div class="container footter-box">
+      <div class="container">
         <a href="index.html" class="logo" lang="en">Web<span class="footer-logo">Studio</span></a>
         <address class="address">
           <ul class="address-list list">
