@@ -378,17 +378,16 @@ ul {
   /* Робимо Flex-контейнер багаторядковим */
   flex-wrap: wrap;
   /* Компенсовуємо верхні і праві відступи першого ряду */
-  margin-left: -30px;
-  margin-top: -30px;
+  margin: -15px;
 }
 
 .products-item {
   display: block;
-  width: 370px;
+  /* width: 370px; */
+  /* Задаємо flex-basis замість width */
+  flex-basis: calc((100% - 90px) / 3);
   /* Задаємо всім елементам верхній і правий відступи */
-  margin-left: 30px;
-  margin-top: 30px;
-  padding-bottom: 20px;
+  margin: 15px;
 }
 
 .products-img {
