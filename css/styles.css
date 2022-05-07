@@ -385,7 +385,7 @@ ul {
   display: block;
   /* width: 370px; */
   /* Задаємо flex-basis замість width */
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc(100% / 3 - 30px);
   /* Задаємо всім елементам верхній і правий відступи */
   margin: 15px;
 }
