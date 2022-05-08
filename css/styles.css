@@ -5,7 +5,7 @@
   --description-text-color: #757575;
   --accent-color: #2196f3;
   --header-logo-color: #000000;
-  --button-color: #f5f4fa;
+  --section-bg-color: #f5f4fa;
   --background-dark-color: #2f303a;
   --address-item-color: rgba(255, 255, 255, 0.6);
   --header-border-color: #ececec;
@@ -32,6 +32,12 @@ ul {
 
 ul {
   padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Контейнер */
@@ -195,8 +201,8 @@ ul {
 }
 
 .section {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .title {
@@ -206,6 +212,12 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.about {
+  padding-top: 0;
 }
 
 .section-title {
@@ -241,8 +253,8 @@ ul {
   justify-content: space-between;
 }
 
-.about-img {
-  display: block;
+.team {
+  background: var(--section-bg-color);
 }
 
 .team-list {
@@ -253,11 +265,6 @@ ul {
 .team-item {
   display: block;
   width: 270px;
-  padding-bottom: 30px;
-}
-
-.member {
-  margin-bottom: 30px;
 }
 
 .member-title {
@@ -274,6 +281,11 @@ ul {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+}
+
+.about-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Колір фону героя і футера */
@@ -331,7 +343,7 @@ ul {
 
 /* Стилі кнопок фільтра */
 .filter-button {
-  background-color: var(--button-color);
+  background-color: var(--section-bg-color);
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -353,7 +365,7 @@ ul {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .filter-item:not(:last-child) {
